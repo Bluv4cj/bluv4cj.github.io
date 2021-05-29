@@ -9,6 +9,8 @@
         <p id="dem"></p>
 
         <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: #D94438; width:12px; height:20px; padding:40px;"></div>
+        <div onmousedown="onDown(this)" onmouseup="mUp(this)" style="background-color: #D94438; width:90px; height:20px; padding: 40px;"></div>
+
 
         <script>
             var x = document.ElementById("dem");
@@ -18,6 +20,10 @@
 
             function mOut(val){
                 val.innerHTML = "mouse over me"
+            }
+            function mUp(val){
+                val.style.backgroundColor = "#D94A38";
+                val.innerHTML = "Thank you";
             }
 
         </script>
