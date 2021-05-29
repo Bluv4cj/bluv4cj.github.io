@@ -8,12 +8,12 @@
         <h1> my first web site design </h1>
         <p id="dem"></p>
 
-        <div onmouseover="mOver(this)" onmouseout="move(this)" style="background-color: #D94438; width:12px; height:20px; padding:40px;"></div>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: #D94438; width:12px; height:20px; padding:40px;"></div>
 
         <script>
             var x = document.ElementById("dem");
             function mOver(val){
-                val.innerHTML =- "thank you";
+                val.innerHTML = "Thank you";
             }
 
             function mOut(val){
